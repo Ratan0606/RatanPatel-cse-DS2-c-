@@ -6,11 +6,11 @@
   <title>Box Layout</title>
   <style>
     :root{
-      --border: #f33f08;
-      --orange: #f0a040;
-      --purple: #54f833;
-      --light: #e01642;
-      --blue: #17a4d9;
+      --border: #bfe7d6;
+      --orange: #bde9e5;
+      --purple: #a3eff1;
+      --light: #ebbec7;
+      --blue: #cee0b8;
     }
 
     body{
@@ -19,7 +19,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      background:#f7f7f7;
+      background:#131212;
       font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -32,7 +32,7 @@
       grid-template-rows: 60px 40px 120px 120px 50px; 
       gap:12px;
       padding:12px;
-      background:white;
+      background:rgb(22, 22, 22);
     }
 
     header{
@@ -48,7 +48,7 @@
     nav{
       grid-column: 1 / -1;
       background:var(--purple);
-      color:white;
+      color:rgb(22, 5, 5);
       display:flex;
       align-items:center;
       justify-content:center;
@@ -80,7 +80,7 @@
       grid-column: 1 / 2;
       grid-row: 4 / 5;
       background:var(--blue);
-      color:white;
+      color:rgb(26, 25, 25);
       display:flex;
       align-items:center;
       justify-content:center;
@@ -89,7 +89,7 @@
       overflow:hidden;
     }
 
-    /* diagonal decoration like image */
+    
     .article::after{
       content:"";
       position:absolute;
@@ -97,7 +97,7 @@
       top:30px;
       width:120px;
       height:120px;
-      background:rgba(255,255,255,0.12);
+      background:rgba(19, 18, 18, 0.12);
       transform: rotate(-35deg);
       border-top-left-radius:8px;
     }
@@ -113,7 +113,7 @@
       font-weight:600;
     }
 
-    /* small responsive tweak */
+    
     @media (max-width:420px){
       .wrap{ width: 92%; grid-template-columns: 1fr 100px; }
     }
